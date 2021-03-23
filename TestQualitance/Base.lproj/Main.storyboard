@@ -60,6 +60,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cA1-fz-oBq">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="b47-Uh-pnU" id="mfR-p0-QI3"/>
+                                    <outlet property="delegate" destination="b47-Uh-pnU" id="gMQ-WM-rYV"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iLF-TU-G06"/>
@@ -71,6 +75,18 @@
                             <constraint firstItem="iLF-TU-G06" firstAttribute="bottom" secondItem="cA1-fz-oBq" secondAttribute="bottom" id="hFx-lq-YZH"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="c2n-BH-0Gv">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Joc-sy-bIM">
+                            <connections>
+                                <action selector="didPressCancel:" destination="b47-Uh-pnU" id="kiC-d1-gA6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="eQS-h1-bEr">
+                            <connections>
+                                <action selector="didPressSave:" destination="b47-Uh-pnU" id="Egz-cu-TNH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="cA1-fz-oBq" id="LWR-oJ-7h5"/>

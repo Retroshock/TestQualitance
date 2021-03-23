@@ -222,10 +222,9 @@
 		278EB33D2606788F00CD1812 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				5E706404260A88A500503CFC /* ViewModels */,
 				278EB35926067F4C00CD1812 /* Models */,
 				278EB33B2606784100CD1812 /* Views */,
-				278EB3612606851200CD1812 /* DashboardViewModel.swift */,
-				272E0F81260A75DC002C2DA3 /* EditEventsViewModel.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -307,6 +306,15 @@
 				3037A7674F30E65E65852A0E /* Pods-TestQualitance.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5E706404260A88A500503CFC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				278EB3612606851200CD1812 /* DashboardViewModel.swift */,
+				272E0F81260A75DC002C2DA3 /* EditEventsViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		F69E89534FF5A42B974B9277 /* Frameworks */ = {

@@ -23,6 +23,15 @@ class EditEventsViewController: UIViewController, ContainingViewModel {
             self?.tableView.reloadData()
         }).disposed(by: disposeBag)
     }
+
+    @IBAction func didPressSave(_ sender: Any) {
+        viewModel.saveChanges()
+        self.navigationController?.popViewController(animated: true)
+    }
+
+    @IBAction func didPressCancel(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 extension EditEventsViewController: UITableViewDelegate, UITableViewDataSource {
